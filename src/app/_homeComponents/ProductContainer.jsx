@@ -14,6 +14,9 @@ const ProductContainer = () => {
   console.log(products);
   return (
     <div className="py-10">
+      <h1 className="text-4xl text-center font-semibold py-6">
+        See Our Product
+      </h1>
       {products.length === 0 && (
         <div className="h-64 w-full flex items-center justify-center">
           <ClipLoader color={"black"} size={50} />
