@@ -2,7 +2,7 @@
   {
     "id": "1234567890123",
     "name": "The Latest iPhone",
-    "price": "$1,099",
+    "price": "1,099",
     "details": "The most advanced iPhone ever, with a new design, A16 Bionic chip, and Cinematic mode.",
     "rating": 5,
     "image": "https://www.91-img.com/gallery_images_uploads/3/d/3df5ca6a9b470f715b085991144a5b76e70da975.JPG?tr=h-630,c-at_max,q-80"
@@ -10,7 +10,7 @@
   {
     "id": "1234567890456",
     "name": "The New MacBook Air",
-    "price": "$999",
+    "price": "999",
     "details": "The most popular MacBook, now with a new M2 chip, a larger display, and a MagSafe charging port.",
     "rating": 4,
     "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
@@ -18,7 +18,7 @@
   {
     "id": "1234567890789",
     "name": "The Google Pixel 7 Pro",
-    "price": "$899",
+    "price": "899",
     "details": "The best Pixel yet, with a new design, a powerful Google Tensor chip, and a triple-lens rear camera.",
     "rating": 4.5,
     "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
@@ -26,7 +26,7 @@
   {
     "id": "1234567890321",
     "name": "The Samsung Galaxy S23 Ultra",
-    "price": "$1,199",
+    "price": "1,199",
     "details": "The most powerful Android phone on the market, with a 6.8-inch AMOLED display, a quad-lens rear camera, and a built-in S Pen stylus.",
     "rating": 5,
     "image": "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
@@ -34,7 +34,7 @@
   {
     "id": "1234567890654",
     "name": "The Nintendo Switch OLED",
-    "price": "$349",
+    "price": "349",
     "details": "The definitive version of the Nintendo Switch, with a larger OLED display, enhanced speakers, and a longer battery life.",
     "rating": 4,
     "image": "https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
@@ -42,7 +42,7 @@
   {
     "id": "1234567890987",
     "name": "The PS5",
-    "price": "$499",
+    "price": "499",
     "details": "The most powerful console on the market, with a 4K Blu-ray drive, ray tracing support, and a lightning-fast SSD.",
     "rating": 4.5,
     "image": "https://www.91-img.com/gallery_images_uploads/3/d/3df5ca6a9b470f715b085991144a5b76e70da975.JPG?tr=h-630,c-at_max,q-80"
@@ -50,7 +50,7 @@
   {
     "id": "1234567890234",
     "name": "The Xbox Series X",
-    "price": "$499",
+    "price": "499",
     "details": "The most powerful console on the market, with a 4K Blu-ray drive, ray tracing support, and a lightning-fast SSD.",
     "rating": 4.5,
     "image": "https://images.unsplash.com/photo-1616348436168-de43ad0db179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=481&q=80"
@@ -58,7 +58,7 @@
   {
     "id": "1234567890567",
     "name": "The Apple Watch Series 8",
-    "price": "$399",
+    "price": "399",
     "details": "The latest Apple Watch, with a new design, a larger display, and a more powerful processor.",
     "rating": 4,
     "image": "https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
@@ -66,7 +66,7 @@
   {
     "id": "1234567890890",
     "name": "The Amazon Echo Show 10",
-    "price": "$249",
+    "price": "249",
     "details": "The smart display with a rotating head, so you can always see it.",
     "rating": 4.5,
     "image": "https://www.91-img.com/gallery_images_uploads/3/d/3df5ca6a9b470f715b085991144a5b76e70da975.JPG?tr=h-630,c-at_max,q-80"
