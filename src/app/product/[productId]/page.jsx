@@ -1,11 +1,13 @@
 "use client";
+import { addToCart } from "@/RTK-state/Sclice/cartSlice";
 import axios from "axios";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ClipLoader } from "react-spinners";
 
 const ProductView = ({ params }) => {
+  const dispatch = useDispatch();
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(false);
   const id = params.productId;
@@ -162,7 +164,12 @@ const ProductView = ({ params }) => {
                   <span class="title-font font-medium text-2xl text-gray-900">
                     $ {price}
                   </span>
-                  <button class="btn btn-primary btn-sm">Add to Cart</button>
+                  <button
+                    onClick={() => dispatch(addToCart(product))}
+                    class="btn btn-primary btn-sm"
+                  >
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>

@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { FaOpencart } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const cartAmount = useSelector((state) => state.cart.length);
   return (
     <div className="shadow-md ">
       <header className="text-gray-600 body-font">
@@ -36,14 +38,16 @@ const Navbar = () => {
             <Link href={"/"} className="mr-5 hover:text-gray-900">
               <div className="relative">
                 <FaOpencart />
-                <div className="badge badge-success badge-sm absolute -top-2 -right-3">
-                  1
-                </div>
+                {cartAmount > 0 && (
+                  <div className="badge badge-success badge-sm absolute -top-2 -right-3">
+                    {cartAmount}
+                  </div>
+                )}
               </div>
             </Link>
           </nav>
           <Link href={"/auth/singUp"} className="btn btn-primary btn-sm">
-            log in
+            Register
           </Link>
         </div>
       </header>
