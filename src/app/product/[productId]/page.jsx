@@ -26,6 +26,14 @@ const ProductView = ({ params }) => {
       });
   }, [id]);
   const { name, image, rating, price } = product;
+  const addCart = () => {
+    const orderId = Math.random().toString(36).slice(2);
+    const orderProduct = {
+      ...product,
+      orderId,
+    };
+    dispatch(addToCart(orderProduct));
+  };
   return (
     <>
       {loading ? (
@@ -164,10 +172,7 @@ const ProductView = ({ params }) => {
                   <span class="title-font font-medium text-2xl text-gray-900">
                     $ {price}
                   </span>
-                  <button
-                    onClick={() => dispatch(addToCart(product))}
-                    class="btn btn-primary btn-sm"
-                  >
+                  <button onClick={addCart} class="btn btn-primary btn-sm">
                     Add to Cart
                   </button>
                 </div>

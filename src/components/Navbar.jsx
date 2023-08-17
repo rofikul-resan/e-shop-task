@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link href={"/"} className="mr-5 hover:text-gray-900">
               DashBoard
             </Link>
-            <Link href={"/"} className="mr-5 hover:text-gray-900">
+            <Link href={"/cart"} className="mr-5 hover:text-gray-900">
               <div className="relative">
                 <FaOpencart />
                 {cartAmount > 0 && (
