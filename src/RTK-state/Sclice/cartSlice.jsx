@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
 
 export const cartSlice = createSlice({
   initialState: [],
@@ -6,6 +7,11 @@ export const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       state.push(action.payload);
+      Swal.fire({
+        title: "Product Add To Cart",
+        icon: "success",
+        timer: 1500,
+      });
     },
   },
 });
