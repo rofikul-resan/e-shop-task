@@ -1,7 +1,7 @@
 "use client";
 import { getProduct } from "@/RTK-state/Sclice/ProductSlice";
 import ItemCard from "@/components/ItemCard";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ClipLoader } from "react-spinners";
 
@@ -11,7 +11,7 @@ const ProductContainer = () => {
   useEffect(() => {
     dispatch(getProduct());
   }, [dispatch]);
-  // console.log(products);
+
   return (
     <div className="py-10">
       <h1 className="text-4xl text-center font-semibold py-6">

@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { FaOpencart } from "react-icons/fa";
 
 const Navbar = () => {
