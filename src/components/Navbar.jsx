@@ -5,7 +5,7 @@ import { FaOpencart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="shadow-md">
+    <div className="shadow-md ">
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
@@ -41,7 +41,9 @@ const Navbar = () => {
               </div>
             </Link>
           </nav>
-          <button className="btn btn-primary btn-sm">log in</button>
+          <Link href={"/auth/singUp"} className="btn btn-primary btn-sm">
+            log in
+          </Link>
         </div>
       </header>
     </div>

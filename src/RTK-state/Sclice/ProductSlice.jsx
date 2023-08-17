@@ -1,3 +1,4 @@
+"use client";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -10,11 +11,12 @@ export const productSlice = createSlice({
   name: "product",
   initialState: [],
   reducers: {},
-  extraReducers: {
-    [getProduct.fulfilled]: (state, action) => {
+
+  extraReducers: (builder) => {
+    builder.addCase(getProduct.fulfilled, (state, action) => {
       const data = action.payload;
       data.forEach((product) => state.push(product));
-    },
+    });
   },
 });
 
