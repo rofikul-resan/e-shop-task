@@ -5,10 +5,10 @@ import React, { useEffect } from "react";
 import { FaOpencart } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const cartAmount = useSelector((state) => state.cart.length);
   return (
-    <div className="shadow-md ">
+    <div className={`shadow-md ${className} `}>
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link
@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link href={"/about"} className="mr-5 hover:text-gray-900">
               About
             </Link>
-            <Link href={"/"} className="mr-5 hover:text-gray-900">
+            <Link href={"/dashboard"} className="mr-5 hover:text-gray-900">
               DashBoard
             </Link>
             <Link href={"/cart"} className="mr-5 hover:text-gray-900">

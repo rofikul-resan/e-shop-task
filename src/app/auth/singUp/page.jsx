@@ -18,11 +18,8 @@ const SingUp = () => {
   };
   return (
     <div className="hero min-h-screen py-10 md:w-9/12 mx-auto">
-      <form
-        onSubmit={handleSingUp}
-        className="hero-content flex-col lg:flex-row-reverse"
-      >
-        <div className="text-center lg:text-left">
+      <div className="hero-content flex-col lg:flex-row-reverse ">
+        <div className="text-center lg:text-left w-9/12 mx-auto flex-1">
           <h1 className="text-5xl font-bold">Register now!</h1>
           <p className="py-6">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
@@ -30,7 +27,10 @@ const SingUp = () => {
             a id nisi.
           </p>
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <form
+          onSubmit={handleSingUp}
+          className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"
+        >
           <div className="card-body">
             <div className="form-control">
               <label className="label">
@@ -79,8 +79,8 @@ const SingUp = () => {
               <button className="btn btn-primary">Register</button>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
