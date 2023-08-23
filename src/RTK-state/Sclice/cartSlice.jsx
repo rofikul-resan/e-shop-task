@@ -13,7 +13,11 @@ export const cartSlice = createSlice({
         timer: 1500,
       });
     },
+    deleteToCart: (state, action) => {
+      const orderId = action.payload;
+      return state.filter((item) => item.orderId !== orderId);
+    },
   },
 });
-export const { addToCart } = cartSlice.actions;
+export const { addToCart, deleteToCart } = cartSlice.actions;
 export const cartReducer = cartSlice.reducer;

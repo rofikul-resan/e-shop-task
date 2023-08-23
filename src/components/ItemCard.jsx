@@ -35,9 +35,9 @@ const ItemCard = ({ product }) => {
         </p>
         <div className="card-actions justify-end">
           <Link href={`/product/${id}`} className="btn btn-primary">
-            Buy Now
+            See More
           </Link>
-          <button onClick={addCart} class="btn btn-success  ml-2">
+          <button onClick={addCart} className="btn btn-success  ml-2">
             Add to Cart
           </button>
         </div>

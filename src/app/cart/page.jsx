@@ -5,10 +5,10 @@ import CartItem from "./CartItem";
 
 const Cart = () => {
   const cartDate = useSelector((state) => state.cart);
-  const totalPrice = cartDate?.reduce(
-    (prePrice, current) => +current.price + prePrice,
-    0
-  );
+  let totalPrice = 0;
+  cartDate?.map((item) => {
+    totalPrice = totalPrice + +item.price;
+  });
   const vat = ((totalPrice / 100) * 5).toFixed(2);
   console.log(totalPrice);
   return (
@@ -45,7 +45,7 @@ const Cart = () => {
 
                   <div className="flex justify-between !text-base font-medium">
                     <dt>Total</dt>
-                    <dd>$ {totalPrice + vat}</dd>
+                    <dd>$ {+totalPrice + +vat}</dd>
                   </div>
                 </dl>
 

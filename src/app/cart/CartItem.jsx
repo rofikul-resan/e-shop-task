@@ -1,8 +1,11 @@
+import { deleteToCart } from "@/RTK-state/Sclice/cartSlice";
 import Image from "next/image";
 import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
+import { useDispatch } from "react-redux";
 
 const CartItem = ({ product }) => {
+  const dispatch = useDispatch();
   return (
     <div className="flex items-center bg-base-200 gap-4">
       <Image
@@ -26,7 +29,10 @@ const CartItem = ({ product }) => {
       </div>
 
       <div className="flex flex-1 items-center justify-end gap-2">
-        <button className="text-gray-600 transition hover:text-red-600 btn btn-ghost mr-4">
+        <button
+          onClick={() => dispatch(deleteToCart(product.orderId))}
+          className="text-gray-600 transition hover:text-red-600 btn btn-ghost mr-4"
+        >
           <AiOutlineDelete className="text-xl" />
         </button>
       </div>
