@@ -6,7 +6,6 @@ import React from "react";
 
 const AppLayout = ({ children }) => {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <main>
       <Navbar className={pathname.includes("dashboard") && "hidden"} />

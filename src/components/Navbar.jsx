@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import { FaOpencart } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 const Navbar = ({ className }) => {
   const cartAmount = useSelector((state) => state.cart.length);
+  const pathname = usePathname();
   return (
     <div className={`shadow-md ${className} `}>
       <header className="text-gray-600 body-font">
@@ -26,13 +28,37 @@ const Navbar = ({ className }) => {
             <h1 className="text-3xl font-semibold">E-Shop</h1>
           </Link>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-xl md:justify-center flex-col md:flex-row ">
-            <Link href={"/"} className="mr-5 hover:text-gray-900">
+            <Link
+              href={"/"}
+              className="mr-5 hover:text-gray-900"
+              style={
+                pathname === "/" ? { borderBottom: "1px solid orange" } : {}
+              }
+            >
               Home
             </Link>
-            <Link href={"/about"} className="mr-5 hover:text-gray-900">
+            <Link
+              href={"/about"}
+              className="mr-5 hover:text-gray-900"
+              style={
+                pathname === "/about"
+                  ? { borderBottom: "1px solid orange" }
+                  : {}
+              }
+            >
               About
             </Link>
-            <Link href={"/dashboard"} className="mr-5 hover:text-gray-900">
+            <Link
+              href={"/dashboard"}
+              className="mr-5 hover:text-gray-900"
+              style={
+                pathname === "/dashboard"
+                  ? {
+                      borderBottom: "1px solid orange",
+                    }
+                  : {}
+              }
+            >
               DashBoard
             </Link>
             <Link href={"/cart"} className="mr-5 hover:text-gray-900">

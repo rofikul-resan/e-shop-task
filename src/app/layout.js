@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Providers from "@/Provider/Providers";
 import AppLayout from "./AppLayout";
+import WhatsAppMsg from "@/components/WhatsAppMsg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <AppLayout>{children}</AppLayout>
+          <WhatsAppMsg />
         </Providers>
       </body>
     </html>
